@@ -1,14 +1,14 @@
-setInterval(() =>{
-    date = new date();
-    htime = d.gethours();
-    mtime = d.getminutes();
-    stime = d.getseconds();
+setInterval(() => {
+    d = new Date();
+    htime = d.getHours();
+    mtime = d.getMinutes();
+    stime = d.getSeconds();
     hrotation=30*htime + mtime/2;
-    mrotation=6*mtime
-    srotation= 6*stime
+    mrotation=6*mtime;
+    srotation= 6*stime;
 
-    hours.style.transform=`rorate(${hrotation}deg)`;
-    minutes.style.transform=`rorate(${mrotation}deg)`;
-    seconds.style.transform=`rorate(${srotation}deg)`;
+    hour.style.transform=`rotate(${hrotation}deg)`;
+    minute.style.transform=`rotate(${mrotation}deg)`;
+    second.style.transform=`rotate(${srotation}deg)`;
 
 }, 1000);
